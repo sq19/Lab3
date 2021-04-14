@@ -1,14 +1,25 @@
+/* Styling for navigation bar */
 .navigation {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    background-color: #D7CEC7;
 }
 
+/* Styling for left component of navigation bar */
 .left-nav {
     display: flex;
     justify-content: flex-start;
+    padding-left: 10px;
+    color: #565656;
 }
 
+/* Styling for right component of navigation bar */
 .right-nav {
     display: flex;
     justify-content: flex-end;
+}
+
+.right-nav-components {
+    padding-right: 10px;
+    color: #565656;
 }
