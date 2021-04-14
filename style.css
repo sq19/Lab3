@@ -1,0 +1,14 @@
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left-nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: flex-end;
+}
