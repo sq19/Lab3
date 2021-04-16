@@ -1,8 +1,16 @@
+/* Standardizing font */
+.body {
+    font-family: 'Lato', sans-serif;
+}
+
 /* Styling for navigation bar */
 .navigation {
     display: flex;
     justify-content: space-between;
-    background-color: #D7CEC7;
+    background-color: rgb(215,206,199);
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 /* Styling for left component of navigation bar */
@@ -10,7 +18,7 @@
     display: flex;
     justify-content: flex-start;
     padding-left: 10px;
-    color: #565656;
+    color: black;
 }
 
 /* Styling for right component of navigation bar */
@@ -20,6 +28,95 @@
 }
 
 .right-nav-components {
-    padding-right: 10px;
-    color: #565656;
+    padding-right: 20px;
+    color: black;
+}
+
+.right-nav-components:active {
+    color: #76323F;
+}
+
+/* Stying entry of journal */
+.entry {
+    border-color: black;
+    border-radius: 5px;
+    border-width: 3px;
+    border-style: dashed;
+    padding: 5px 5px 5px 5px;
+    margin-top: 100px;
+}
+
+.entry-name {
+    width: 100%;
+    background-color: #D7CEC7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    text-align: center;
+    color: #76323F;
+}
+
+.entry-body {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+
+.video-insert {
+    width: 100%;
+    padding: 30px;
+}
+
+.video-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.image-insert {
+    width: 100%;
+}
+
+.image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.audio-div {
+    display: grid;
+    grid-template-rows: 1;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+/* Styling for form */
+.form {
+    margin: auto;
+}
+
+.submit {
+    font-family: 'Lato', sans-serif;
+    border-radius: 5px;
+    background-color: #D7CEC7;
+    border-style: none;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: medium;
+    padding: 5px 10px 5px 10px;
+}
+
+.submit:hover {
+    color: #76323F;
+}
+
+/* Styling for footer */
+.footer {
+    background-color: hsl(26.3,16.7%,81.2%);
 }
