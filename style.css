@@ -1,5 +1,5 @@
 /* Standardizing font */
-.body {
+h1, h2, h3, p, ul, ol, form, summary {
     font-family: 'Lato', sans-serif;
 }
 
@@ -11,6 +11,27 @@
     position: fixed;
     top: 0;
     width: 100%;
+    border-bottom: none !important;
+    box-shadow: inset 0 -2px 0 #000000;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+@media screen and (max-width: 992px) {
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        background-color: #d7c7ce;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        border-bottom: none !important;
+        box-shadow: inset 0 -2px 0 #000000;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
 }
 
 /* Styling for left component of navigation bar */
@@ -18,7 +39,10 @@
     display: flex;
     justify-content: flex-start;
     padding-left: 10px;
-    color: black;
+}
+
+nav > h1 {
+    color: #836c96;
 }
 
 /* Styling for right component of navigation bar */
@@ -29,37 +53,78 @@
 
 .right-nav-components {
     padding-right: 20px;
-    color: black;
+    margin-left: 5px;
 }
 
 .right-nav-components:active {
     color: #76323F;
 }
 
-/* Stying entry of journal */
+a[href="#entry-1"] {
+    color: #78582F;
+}
+
+a[href="#entry-2"] {
+    color: black;
+}
+
+a[href="#entry-3"] {
+    color: #76323F;
+}
+
+a[href="#form"] {
+    color: gray;
+}
+
+/* Styling entry of journal */
 .entry {
     border-color: black;
     border-radius: 5px;
     border-width: 3px;
     border-style: dashed;
     padding: 5px 5px 5px 5px;
-    margin-top: 100px;
+    margin: 100px 20px 100px 20px;
+    display: block;
+    position: relative;
 }
 
-.entry-name {
+*.entry-name {
     width: 100%;
     background-color: #D7CEC7;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 0;
     text-align: center;
+}
+
+div h3 {
     color: #76323F;
+}
+
+p.highlights {
+    background-color: lemonchiffon;
+    margin-right: 20px;
 }
 
 .entry-body {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100%;
+    margin-left: 15px;
+}
+
+p ~ ul {
+    border: 5px solid #76323F;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div ol {
+    border: 5px solid #76323F;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .video-insert {
@@ -74,6 +139,8 @@
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: 1;
+    position: relative;
+    margin-right: 20px;
 }
 
 .image-insert {
@@ -87,6 +154,7 @@
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: 1;
+    margin-right: 20px;
 }
 
 .audio-div {
@@ -96,12 +164,36 @@
     grid-row-start: 1;
 }
 
+audio {
+    z-index: 0;
+}
+
 /* Styling for form */
 .form {
     margin: auto;
+    display: inline;
 }
 
-.submit {
+#title {
+    font-family: 'Lato', sans-serif;
+}
+
+#mood {
+    font-family: 'Lato', sans-serif;
+}
+
+#description {
+    min-width: 10vw;
+    min-height: 10vh;
+    max-width: 80vw;
+    font-family: 'Lato', sans-serif;
+}
+
+#problems {
+    font-family: 'Lato', sans-serif;
+}
+
+datalist + button {
     font-family: 'Lato', sans-serif;
     border-radius: 5px;
     background-color: #D7CEC7;
@@ -110,13 +202,20 @@
     font-weight: bold;
     font-size: medium;
     padding: 5px 10px 5px 10px;
+    margin-bottom: 5px;
 }
 
 .submit:hover {
-    color: #76323F;
+    color: white;
+    background-color: #76323F;
 }
 
 /* Styling for footer */
 .footer {
+    padding: 10px 5px 10px 5px;
     background-color: hsl(26.3,16.7%,81.2%);
+}
+
+p {
+    font-size: medium;
 }
