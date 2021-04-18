@@ -205,7 +205,7 @@ datalist + button {
     margin-bottom: 5px;
 }
 
-.submit:hover {
+button:hover {
     color: white;
     background-color: #76323F;
 }
